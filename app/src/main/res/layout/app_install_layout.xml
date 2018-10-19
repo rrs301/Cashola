@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fashion_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:elevation="3dp"
+        app:cardElevation="3dp"
+        android:padding="5dp"
+        android:background="@color/colorPrimaryDark"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#adffffff">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:id="@+id/AppIcon"
+                android:src="@drawable/placeholder"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AppName"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:id="@+id/AppName"
+                android:textColor="#393939"
+                android:layout_toRightOf="@+id/AppIcon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/Coinbtn"
+                android:text="AppDescription"
+                android:layout_below="@+id/AppName"
+                android:layout_marginTop="5dp"
+                android:textSize="11dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/AppDescription"
+                android:textColor="#bd7b7979"
+                android:lines="2"
+                android:layout_toRightOf="@+id/AppIcon"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="-"
+                android:id="@+id/Coinbtn"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:background="#493978"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>

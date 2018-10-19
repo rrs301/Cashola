@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "288534415159",
+    "firebase_url": "https://cashola-93d62.firebaseio.com",
+    "project_id": "cashola-93d62",
+    "storage_bucket": "cashola-93d62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288534415159:android:e72d444fc2b0eff6",
+        "android_client_info": {
+          "package_name": "com.cashola"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288534415159-dn57tmrp5dtpcm7n8dsk3haurv3n1djl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ2_ce4GuOVJqOpxXhNd-bKyfvh6nNpaY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

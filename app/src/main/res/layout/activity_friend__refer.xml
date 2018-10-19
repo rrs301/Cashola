@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    >
+  <!--  <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/AdmobBannerId">
+    </com.google.android.gms.ads.AdView>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/adView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+
+        android:layout_marginTop="20dp"
+        android:src="@drawable/referfriend"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite your friend to MasterIncome"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/inviteText"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_margin="17dp"
+        android:textColor="#e2e2e2"
+        android:layout_below="@+id/inviteText"
+        android:textSize="16dp"
+        android:id="@+id/ReferText"
+
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_horizontal"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_below="@+id/ReferText"
+        android:textSize="20dp"
+        android:id="@+id/ReferCode"
+        android:textColor="#d7d7d9"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+
+        android:text="Send Invitations"
+        android:textSize="20dp"
+        android:onClick="SendInvite"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/ShortUrlbtn"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="13dp"
+
+        android:paddingTop="10dp"
+
+
+
+        android:textColor="@color/colorPrimary"
+       />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

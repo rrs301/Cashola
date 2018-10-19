@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:rv="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bonus_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:elevation="3dp"
+        app:cardElevation="3dp"
+        android:background="#4bffffff"
+
+        app:cardCornerRadius="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paytm Transfer"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:id="@+id/paytmText"
+                android:textColor="#080808"/>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="100dp"
+           android:id="@+id/paaytmlogo"
+           android:layout_marginTop="5dp"
+           android:layout_below="@+id/paytmText"
+           android:layout_centerHorizontal="true"
+           android:padding="20dp"
+           android:src="@drawable/paytlogo"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:layout_below="@+id/paaytmlogo"
+                android:hint="Enter Paytm Number"
+                android:inputType="number"
+                android:paddingBottom="13dp"
+                android:background="@drawable/edittext_border"
+
+                android:id="@+id/mobile_number" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:paddingTop="10dp"
+                android:inputType="number"
+                android:paddingRight="20dp"
+                android:hint="Enter amount to send"
+
+                android:paddingBottom="13dp"
+                android:background="@drawable/edittext_border"
+                android:layout_below="@+id/mobile_number"
+                android:id="@+id/Amount" />
+
+
+
+
+            <Button
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="MobileVerify"
+                android:id="@+id/Submit"
+                android:layout_below="@+id/Amount"
+                android:gravity="center"
+               android:layout_marginTop="30dp"
+
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="13dp"
+
+                android:paddingTop="10dp"
+                android:textSize="17dp"
+                android:text="Submit"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+             />
+
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/note1"
+               android:layout_below="@+id/Submit"
+               android:layout_marginTop="10dp"
+               android:textColor="#b3da0f0f"
+                android:text="Note: You can make paytm redeem only 2 times in a day.Otherwise Payment will b cancel."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/note2"
+                android:layout_below="@+id/note1"
+                android:layout_marginTop="10dp"
+                android:textColor="#b37b7979"
+                android:text="Note: Minimum amount transfer to paytm is Rs.20"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

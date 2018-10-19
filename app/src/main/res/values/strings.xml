@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cashola</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="Rs">\u20B9 </string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="checkspeed">  Ram \n Booster</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="AdmobApppId">ca-app-pub-3659822475267250~3298560885</string>
+    <string name="AdmobBannerId">ca-app-pub-3659822475267250/2962668900</string>
+    <string name="AdmobInterestialAd">ca-app-pub-9859005529851767/5783731809</string>
+
+    <string name="FACEBOOK_APP_ID">216700549083353</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">1f67b9eaacf18648caed91cc30542c39</string>
+
+</resources>

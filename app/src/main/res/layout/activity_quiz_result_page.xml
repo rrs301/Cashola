@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:id="@+id/resultText"
+        android:textColor="#fcef04"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Givan Correct Ans"
+        android:layout_below="@+id/resultText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/resultdestext"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_below="@+id/resultdestext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:textSize="45dp"
+        android:textColor="#ffffff"
+        android:id="@+id/resultcount"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultcount"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/credittext"
+        android:text="Thank You for Play Daily Quizz"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:text="Play More"
+        android:onClick="PlayMoreBtn"
+        android:background="#fff"/>
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        />
+
+</RelativeLayout>
